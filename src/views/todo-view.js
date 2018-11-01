@@ -1,6 +1,7 @@
 import { LitElement, html, property } from '@polymer/lit-element';
 import { connect } from 'pwa-helpers';
 import { store } from '../redux/store.js';
+import { getVisibleTodosSelector } from '../redux/reducers/todo.js';
 import {
   addTodo,
   VisibilityFilters,
@@ -13,9 +14,6 @@ import '@vaadin/vaadin-text-field';
 import '@vaadin/vaadin-checkbox';
 import '@vaadin/vaadin-radio-button/vaadin-radio-button';
 import '@vaadin/vaadin-radio-button/vaadin-radio-group';
-
-import { todo, getVisibleTodosSelector } from '../redux/reducers/todo.js';
-store.addReducers({ todo });
 
 export default class TodoView extends connect(store)(LitElement) {
   static get properties() {
