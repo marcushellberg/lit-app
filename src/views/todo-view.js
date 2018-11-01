@@ -110,8 +110,10 @@ export default class TodoView extends connect(store)(LitElement) {
   }
 
   addTodo() {
-    store.dispatch(addTodo(this.task));
-    this.task = '';
+    if (this.task) {
+      store.dispatch(addTodo(this.task));
+      this.task = '';
+    }
   }
 
   updateTodoStatus(todo, complete) {
