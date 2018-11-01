@@ -12,15 +12,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/marcushellberg/pwa-conf-app.git"
+    "url": "git+https://github.com/marcushellberg/lit-app.git"
   },
   "keywords": [],
   "author": "",
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/marcushellberg/pwa-conf-app/issues"
+    "url": "https://github.com/marcushellberg/lit-app/issues"
   },
-  "homepage": "https://github.com/marcushellberg/pwa-conf-app#readme",
+  "homepage": "https://github.com/marcushellberg/lit-app#readme",
   "devDependencies": {
     "clean-webpack-plugin": "^0.1.19",
     "copy-webpack-plugin": "^4.5.2",
