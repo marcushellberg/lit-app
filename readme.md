@@ -22,3 +22,7 @@ or create a production build with
 ```
 npm run prod
 ```
+
+## PWA
+
+By default, the app uses an empty service worker during development time. You can enable ServiceWorker in development by running the app with `npm run dev:sw`. The production build has ServiceWorker enabled by default.
