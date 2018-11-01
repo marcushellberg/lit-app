@@ -39,11 +39,20 @@ class TodoStats extends connect(store)(LitElement) {
         }
       </style>
       
+      ${this.getChart()}
+    `;
+  }
+
+  getChart() {
+    if (this.hasTodos) {
+      return html`
       <vaadin-chart type="pie" ?hidden="${!this.hasTodos}">
         <vaadin-chart-series 
           .values="${this.chartConfig}"></vaadin-chart-series>
-      </vaadin-chart>
-    `;
+      </vaadin-chart>`;
+    } else {
+      return html`<p>Nothing to do! 🌴🍻☀️</p>`;
+    }
   }
 }
 
